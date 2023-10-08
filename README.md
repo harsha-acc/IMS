@@ -6,9 +6,9 @@ The project is developed using ReactJs, Redux for state management, and Bootstra
 ## Local Setup
 
 To set up this project locally,\
-First, clone this repo using /*git clone https://github.com/nikola-tesla-7/IMS.git*/ command \
-Then at root directory, install all the dependencies using /*npm install*/ command \
-Finally, use /*npm start*/ command to start the local development server. 
+First, clone this repo using *git clone https://github.com/nikola-tesla-7/IMS.git* command \
+Then at root directory, install all the dependencies using *npm install* command \
+Finally, use *npm start* command to start the local development server. 
 
 ## Available Scripts
 
