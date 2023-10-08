@@ -1,6 +1,14 @@
-# Getting Started with Create React App and Redux
+# IMS | Invoice Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project helps us create invoices within seconds with absolutely no effort.
+The project is developed using ReactJs, Redux for state management, and Bootstrap for styling UI components.
+
+## Local Setup
+
+To set up this project locally,
+First, clone this repo using git clone https://github.com/nikola-tesla-7/IMS.git command 
+Then at root directory, install all the dependencies using npm install command
+Finally, use npm start command to start the local development server.
 
 ## Available Scripts
 
