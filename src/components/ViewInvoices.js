@@ -2,7 +2,7 @@ import React from 'react'
 import Divider from './Divider'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import {destroy} from '../app/invoiceReducer'
+import { destroy, duplicate } from '../app/invoiceReducer'
 
 function ViewInvoices() {
 
@@ -10,6 +10,10 @@ function ViewInvoices() {
   const dispatch = useDispatch()
   const deleteInvoice = (invoice) => {
     dispatch(destroy(invoice))
+  }
+
+  const duplicateInvoice = (invoice) => {
+    dispatch(duplicate(invoice))
   }
 
   console.log(invoices)
@@ -27,8 +31,8 @@ function ViewInvoices() {
                 <li class="list-group-item">
                     <div className='row'>
                         <div className='col-1'><b>S.No </b></div>
-                        <div className='col-9'><b>Invoice [From - To] Entities</b></div>
-                        <div className='col-2 d-flex justify-content-center' >
+                        <div className='col-8'><b>Invoice [From - To] Entities</b></div>
+                        <div className='col-3 d-flex justify-content-center' >
                             <b>ACTIONS</b>
                         </div>
                     </div>
@@ -51,6 +55,10 @@ function ViewInvoices() {
                                             <button className='btn btn-warning mx-1'>Update</button>
                                         </Link>
                                     </div>
+                                    <div>
+                                        <button className='btn btn-dark mx-1' onClick={() => duplicateInvoice(invoice)}>Duplicate</button>
+                                    </div>
+
                                     <div><button className='btn btn-danger mx-1' onClick={() => deleteInvoice(invoice)}>Delete</button></div>
                                 </div>
                             </div>
